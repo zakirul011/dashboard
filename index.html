@@ -9,8 +9,8 @@
     <!--======== CSS ========-->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="./assets/css/nice-select.min.css" />
-    <link rel="stylesheet" href="./assets/css/spacing.min.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/nice-select.min.css" /> -->
+    <!-- <link rel="stylesheet" href="./assets/css/spacing.min.css" /> -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
@@ -26,20 +26,24 @@
   <body>
     <!--======== HEADER AREA ========-->
     <header class="header-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="header-content">
-              <div class="mainmenu">
-                <ul>
-                  <li><a href="#">Help</a></li>
-                  <li>
-                    <a href="#"><i class="fas fa-bell"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="header-profile">
-                <a href="#"><img src="./assets/img/Profile.png" alt="" /></a>
+      <div class="header-wrapper">
+        <div class="container-fluid">
+          <div class="row justify-content-end">
+            <div class="col-md-8">
+              <div
+                class="header-content d-flex align-items-center justify-content-end"
+              >
+                <div class="mainmenu">
+                  <ul>
+                    <li><a href="#">Help</a></li>
+                    <li class="active">
+                      <a href="#"><i class="far fa-bell"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header-profile">
+                  <a href="#"><img src="./assets/img/Profile.png" alt="" /></a>
+                </div>
               </div>
             </div>
           </div>
@@ -51,11 +55,2603 @@
     <!--======== MAIN BODY ========-->
     <main>
       <!--======== section ========-->
-      <section class="hero-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-"></div>
-            <div class="col-"></div>
+      <section class="app min-vh-100">
+        <div class="container-fluid g-0">
+          <div class="row g-0">
+            <div class="col-xxl-2 col-md-3">
+              <nav
+                class="nav-list h-100"
+                style="background-color: var(--bs-gray-600)"
+              >
+                <div
+                  class="header-holder"
+                  style="height: var(--header-h)"
+                ></div>
+                <ul>
+                  <li class="active">
+                    <button class="btn">
+                      <img src="./assets/img/icon/1.svg" alt="" />
+                      New Orders
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/2.svg" alt="" />
+                      Unreachable
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/3.svg" alt="" />
+                      Cancelled
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/4.svg" alt="" />
+                      Resolution Center
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/5.svg" alt="" />
+                      Confirm
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/6.svg" alt="" />
+                      Printed
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/7.svg" alt="" />
+                      Attempt
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/8.svg" alt="" />
+                      Search
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/9.svg" alt="" />
+                      Credentials
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/10.svg" alt="" />
+                      Staff
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">
+                      <img src="./assets/img/icon/11.svg" alt="" />
+                      Signout
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-xxl-10 col-md-9">
+              <div class="app-wrapper h-100 min-vh-100">
+                <div
+                  class="header-holder"
+                  style="height: var(--header-h)"
+                ></div>
+                <div class="app-head">
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <h1>New orders</h1>
+                    </div>
+                    <div class="col-auto">
+                      <div class="app-head-filter">
+                        <form action="#">
+                          <div class="row g-4">
+                            <div class="col-auto">
+                              <div class="row g-2 align-items-center">
+                                <div class="col-auto">
+                                  <label
+                                    class="col-form-label"
+                                    for="search-number"
+                                    >Search Number</label
+                                  >
+                                </div>
+                                <div class="col-auto">
+                                  <div class="input-group flex-nowrap">
+                                    <span class="input-group-text"
+                                      ><i class="far fa-search"></i
+                                    ></span>
+                                    <input
+                                      id="search-number"
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Please put the phone number of the customer"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto">
+                              <div class="row g-2 align-items-center">
+                                <div class="col-auto">
+                                  <label class="col-form-label" for="search"
+                                    >Search</label
+                                  >
+                                </div>
+                                <div class="col-auto">
+                                  <div class="input-group flex-nowrap">
+                                    <span class="input-group-text"
+                                      ><i class="far fa-search"></i
+                                    ></span>
+                                    <input
+                                      id="search"
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Enter search term"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto">
+                              <div class="row g-2 align-items-center">
+                                <div class="col-auto">
+                                  <label class="col-form-label"
+                                    >Number of Orders</label
+                                  >
+                                </div>
+                                <div class="col-auto">
+                                  <select class="form-select">
+                                    <option selected>10</option>
+                                    <option value="1">20</option>
+                                    <option value="2">30</option>
+                                    <option value="3">40</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto">
+                              <button class="btn btn-dark" type="submit">
+                                Apply
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="app-body">
+                  <div class="app-content">
+                    <div class="order-list">
+                      <h3 class="text-secondary">
+                        Order list
+                        <span
+                          class="badge rounded-pill text-bg-primary ms-2 fw-normal"
+                          >7 new order</span
+                        >
+                      </h3>
+                      <div class="order-table table-responsive card">
+                        <table class="table align-middle table-lg">
+                          <thead style="--bs-table-bg: var(--bs-gray-900)">
+                            <tr>
+                              <th>Update</th>
+                              <th>Order ID</th>
+                              <th>Customer Name</th>
+                              <th>Goverment</th>
+                              <th>Address</th>
+                              <th>Phone-num</th>
+                              <th>Num-item</th>
+                              <th>Total price</th>
+                              <th>Creation time</th>
+                              <th>Details</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- SINGLE ORDER -->
+                            <tr>
+                              <form action="#">
+                                <td>
+                                  <button
+                                    class="btn btn-primary-light btn-sm"
+                                    type="submit"
+                                  >
+                                    update
+                                  </button>
+                                </td>
+                                <td>#1052</td>
+                                <td>
+                                  <input
+                                    class="order-name form-control bg-gray border-0"
+                                    type="text"
+                                    value="Naoufel Naoufel"
+                                  />
+                                </td>
+                                <td>
+                                  <select class="form-select bg-gray border-0">
+                                    <option selected>Tunis</option>
+                                    <option value="1">Tunis 2</option>
+                                    <option value="2">Tunis 3</option>
+                                    <option value="3">Tunis 4</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input
+                                    class="form-control bg-gray border-0"
+                                    type="text"
+                                    value="Tunis / cite erriadh la marsa"
+                                  />
+                                </td>
+                                <td>
+                                  <div
+                                    class="pill-contain d-inline-block position-relative"
+                                  >
+                                    <input
+                                      class="order-phone form-control bg-gray border-0"
+                                      type="text"
+                                      value="98114171"
+                                    />
+                                    <span
+                                      class="badge text-bg-danger rounded-1 position-absolute top-100 start-50 translate-middle-y"
+                                      >Blacklisted</span
+                                    >
+                                  </div>
+                                </td>
+                                <td>1</td>
+                                <td>39.000</td>
+                                <td>
+                                  <span class="text-success"
+                                    >12 minutes ago</span
+                                  >
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-dark btn-sm order-details-trigger"
+                                    type="button"
+                                  >
+                                    Details
+                                  </button>
+                                </td>
+                              </form>
+                            </tr>
+                            <tr>
+                              <td class="p-0 border-0" colspan="10">
+                                <div class="order-details-collapse">
+                                  <div
+                                    class="order-details p-3"
+                                    style="background-color: var(--bs-gray-600)"
+                                  >
+                                    <h3>Details</h3>
+                                    <div class="row g-3 mb-3">
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Number of article
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              1
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">Items</h5>
+                                            <h4 class="card-text fw-normal">
+                                              Natulex Creme Anti Douleur &
+                                              Varice-100 ML
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount amount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Subtotal
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping discount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Full address
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              Tunis / cite erriadh la marsa
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <h3>Delivery Note</h3>
+                                    <form action="#">
+                                      <textarea
+                                        class="form-control mb-4 rounded-3 border-0"
+                                        rows="3"
+                                        placeholder="Note for the package..."
+                                      ></textarea>
+                                      <div class="row g-3 mb-4">
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-success"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-check-circle"></i>
+                                            Confirm
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-danger"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-times-circle"></i>
+                                            Cancel
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i
+                                              class="fas fa-exclamation-circle"
+                                            ></i>
+                                            Report a problem
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-orange"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-clock"></i>
+                                            Unreachable
+                                          </button>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="row g-4 justify-content-between align-items-end"
+                                      >
+                                        <div class="col-md-5 col-xl-4">
+                                          <textarea
+                                            class="form-control mb-4 rounded-3 border-0"
+                                            rows="3"
+                                            placeholder="Describe the problem or comment"
+                                          ></textarea>
+                                          <h5
+                                            class="fw-normal rounded-1 p-2"
+                                            style="
+                                              background-color: var(
+                                                --bs-warning-text-emphasis
+                                              );
+                                              color: var(--bs-warning);
+                                            "
+                                          >
+                                            Please enter text above to active
+                                            the buttons cancel and report
+                                            problem
+                                          </h5>
+                                        </div>
+                                        <div class="col-md-5 col-xl-4">
+                                          <div
+                                            class="rounded-2 py-2 px-3 bg-white"
+                                          >
+                                            <div
+                                              class="row g-3 align-items-center"
+                                            >
+                                              <div class="col-auto">
+                                                <span class="sq-icon">
+                                                  <i
+                                                    class="far fa-file-alt"
+                                                  ></i>
+                                                </span>
+                                              </div>
+                                              <div class="col-auto flex-fill">
+                                                <h4 class="mb-0">
+                                                  1x Natulex creme 100ML Status
+                                                </h4>
+                                              </div>
+                                              <div class="col-auto">
+                                                <button
+                                                  class="btn btn-danger-light"
+                                                  type="button"
+                                                >
+                                                  Return
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- SINGLE ORDER// -->
+
+                            <!-- SINGLE ORDER -->
+                            <tr>
+                              <form action="#">
+                                <td>
+                                  <button
+                                    class="btn btn-primary-light btn-sm"
+                                    type="submit"
+                                  >
+                                    update
+                                  </button>
+                                </td>
+                                <td>#1052</td>
+                                <td>
+                                  <input
+                                    class="order-name form-control bg-gray border-0"
+                                    type="text"
+                                    value="Naoufel Naoufel"
+                                  />
+                                </td>
+                                <td>
+                                  <select class="form-select bg-gray border-0">
+                                    <option selected>Tunis</option>
+                                    <option value="1">Tunis 2</option>
+                                    <option value="2">Tunis 3</option>
+                                    <option value="3">Tunis 4</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input
+                                    class="form-control bg-gray border-0"
+                                    type="text"
+                                    value="Tunis / cite erriadh la marsa"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    class="order-phone form-control bg-gray border-0"
+                                    type="text"
+                                    value="98114171"
+                                  />
+                                </td>
+                                <td>1</td>
+                                <td>39.000</td>
+                                <td>
+                                  <span class="text-success"
+                                    >12 minutes ago</span
+                                  >
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-dark btn-sm order-details-trigger"
+                                    type="button"
+                                  >
+                                    Details
+                                  </button>
+                                </td>
+                              </form>
+                            </tr>
+                            <tr>
+                              <td class="p-0 border-0" colspan="10">
+                                <div class="order-details-collapse">
+                                  <div
+                                    class="order-details p-3"
+                                    style="background-color: var(--bs-gray-600)"
+                                  >
+                                    <h3>Details</h3>
+                                    <div class="row g-3 mb-3">
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Number of article
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              1
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">Items</h5>
+                                            <h4 class="card-text fw-normal">
+                                              Natulex Creme Anti Douleur &
+                                              Varice-100 ML
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount amount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Subtotal
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping discount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Full address
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              Tunis / cite erriadh la marsa
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <h3>Delivery Note</h3>
+                                    <form action="#">
+                                      <textarea
+                                        class="form-control mb-4 rounded-3 border-0"
+                                        rows="3"
+                                        placeholder="Note for the package..."
+                                      ></textarea>
+                                      <div class="row g-3 mb-4">
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-success"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-check-circle"></i>
+                                            Confirm
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-danger"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-times-circle"></i>
+                                            Cancel
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i
+                                              class="fas fa-exclamation-circle"
+                                            ></i>
+                                            Report a problem
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-orange"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-clock"></i>
+                                            Unreachable
+                                          </button>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="row g-4 justify-content-between align-items-end"
+                                      >
+                                        <div class="col-md-5 col-xl-4">
+                                          <textarea
+                                            class="form-control mb-4 rounded-3 border-0"
+                                            rows="3"
+                                            placeholder="Describe the problem or comment"
+                                          ></textarea>
+                                          <h5
+                                            class="fw-normal rounded-1 p-2"
+                                            style="
+                                              background-color: var(
+                                                --bs-warning-text-emphasis
+                                              );
+                                              color: var(--bs-warning);
+                                            "
+                                          >
+                                            Please enter text above to active
+                                            the buttons cancel and report
+                                            problem
+                                          </h5>
+                                        </div>
+                                        <div class="col-md-5 col-xl-4">
+                                          <div
+                                            class="rounded-2 py-2 px-3 bg-white"
+                                          >
+                                            <div
+                                              class="row g-3 align-items-center"
+                                            >
+                                              <div class="col-auto">
+                                                <span class="sq-icon">
+                                                  <i
+                                                    class="far fa-file-alt"
+                                                  ></i>
+                                                </span>
+                                              </div>
+                                              <div class="col-auto flex-fill">
+                                                <h4 class="mb-0">
+                                                  1x Natulex creme 100ML Status
+                                                </h4>
+                                              </div>
+                                              <div class="col-auto">
+                                                <button
+                                                  class="btn btn-danger-light"
+                                                  type="button"
+                                                >
+                                                  Return
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- SINGLE ORDER// -->
+
+                            <!-- SINGLE ORDER -->
+                            <tr>
+                              <form action="#">
+                                <td>
+                                  <button
+                                    class="btn btn-primary-light btn-sm"
+                                    type="submit"
+                                  >
+                                    update
+                                  </button>
+                                </td>
+                                <td>#1052</td>
+                                <td>
+                                  <input
+                                    class="order-name form-control bg-gray border-0"
+                                    type="text"
+                                    value="Naoufel Naoufel"
+                                  />
+                                </td>
+                                <td>
+                                  <select class="form-select bg-gray border-0">
+                                    <option selected>Tunis</option>
+                                    <option value="1">Tunis 2</option>
+                                    <option value="2">Tunis 3</option>
+                                    <option value="3">Tunis 4</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input
+                                    class="form-control bg-gray border-0"
+                                    type="text"
+                                    value="Tunis / cite erriadh la marsa"
+                                  />
+                                </td>
+                                <td>
+                                  <div
+                                    class="pill-contain d-inline-block position-relative"
+                                  >
+                                    <input
+                                      class="order-phone form-control bg-gray border-0"
+                                      type="text"
+                                      value="98114171"
+                                    />
+                                    <span
+                                      class="badge text-bg-danger rounded-1 position-absolute top-100 start-50 translate-middle-y"
+                                      >Blacklisted</span
+                                    >
+                                  </div>
+                                </td>
+                                <td>1</td>
+                                <td>39.000</td>
+                                <td>
+                                  <span class="text-success"
+                                    >12 minutes ago</span
+                                  >
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-dark btn-sm order-details-trigger"
+                                    type="button"
+                                  >
+                                    Details
+                                  </button>
+                                </td>
+                              </form>
+                            </tr>
+                            <tr>
+                              <td class="p-0 border-0" colspan="10">
+                                <div class="order-details-collapse">
+                                  <div
+                                    class="order-details p-3"
+                                    style="background-color: var(--bs-gray-600)"
+                                  >
+                                    <h3>Details</h3>
+                                    <div class="row g-3 mb-3">
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Number of article
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              1
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">Items</h5>
+                                            <h4 class="card-text fw-normal">
+                                              Natulex Creme Anti Douleur &
+                                              Varice-100 ML
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount amount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Subtotal
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping discount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Full address
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              Tunis / cite erriadh la marsa
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <h3>Delivery Note</h3>
+                                    <form action="#">
+                                      <textarea
+                                        class="form-control mb-4 rounded-3 border-0"
+                                        rows="3"
+                                        placeholder="Note for the package..."
+                                      ></textarea>
+                                      <div class="row g-3 mb-4">
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-success"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-check-circle"></i>
+                                            Confirm
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-danger"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-times-circle"></i>
+                                            Cancel
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i
+                                              class="fas fa-exclamation-circle"
+                                            ></i>
+                                            Report a problem
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-orange"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-clock"></i>
+                                            Unreachable
+                                          </button>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="row g-4 justify-content-between align-items-end"
+                                      >
+                                        <div class="col-md-5 col-xl-4">
+                                          <textarea
+                                            class="form-control mb-4 rounded-3 border-0"
+                                            rows="3"
+                                            placeholder="Describe the problem or comment"
+                                          ></textarea>
+                                          <h5
+                                            class="fw-normal rounded-1 p-2"
+                                            style="
+                                              background-color: var(
+                                                --bs-warning-text-emphasis
+                                              );
+                                              color: var(--bs-warning);
+                                            "
+                                          >
+                                            Please enter text above to active
+                                            the buttons cancel and report
+                                            problem
+                                          </h5>
+                                        </div>
+                                        <div class="col-md-5 col-xl-4">
+                                          <div
+                                            class="rounded-2 py-2 px-3 bg-white"
+                                          >
+                                            <div
+                                              class="row g-3 align-items-center"
+                                            >
+                                              <div class="col-auto">
+                                                <span class="sq-icon">
+                                                  <i
+                                                    class="far fa-file-alt"
+                                                  ></i>
+                                                </span>
+                                              </div>
+                                              <div class="col-auto flex-fill">
+                                                <h4 class="mb-0">
+                                                  1x Natulex creme 100ML Status
+                                                </h4>
+                                              </div>
+                                              <div class="col-auto">
+                                                <button
+                                                  class="btn btn-danger-light"
+                                                  type="button"
+                                                >
+                                                  Return
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- SINGLE ORDER// -->
+
+                            <!-- SINGLE ORDER -->
+                            <tr>
+                              <form action="#">
+                                <td>
+                                  <button
+                                    class="btn btn-primary-light btn-sm"
+                                    type="submit"
+                                  >
+                                    update
+                                  </button>
+                                </td>
+                                <td>#1052</td>
+                                <td>
+                                  <input
+                                    class="order-name form-control bg-gray border-0"
+                                    type="text"
+                                    value="Naoufel Naoufel"
+                                  />
+                                </td>
+                                <td>
+                                  <select class="form-select bg-gray border-0">
+                                    <option selected>Tunis</option>
+                                    <option value="1">Tunis 2</option>
+                                    <option value="2">Tunis 3</option>
+                                    <option value="3">Tunis 4</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input
+                                    class="form-control bg-gray border-0"
+                                    type="text"
+                                    value="Tunis / cite erriadh la marsa"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    class="order-phone form-control bg-gray border-0"
+                                    type="text"
+                                    value="98114171"
+                                  />
+                                </td>
+                                <td>1</td>
+                                <td>39.000</td>
+                                <td>
+                                  <span class="text-success"
+                                    >12 minutes ago</span
+                                  >
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-dark btn-sm order-details-trigger"
+                                    type="button"
+                                  >
+                                    Details
+                                  </button>
+                                </td>
+                              </form>
+                            </tr>
+                            <tr>
+                              <td class="p-0 border-0" colspan="10">
+                                <div class="order-details-collapse">
+                                  <div
+                                    class="order-details p-3"
+                                    style="background-color: var(--bs-gray-600)"
+                                  >
+                                    <h3>Details</h3>
+                                    <div class="row g-3 mb-3">
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Number of article
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              1
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">Items</h5>
+                                            <h4 class="card-text fw-normal">
+                                              Natulex Creme Anti Douleur &
+                                              Varice-100 ML
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount amount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Subtotal
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping discount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Full address
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              Tunis / cite erriadh la marsa
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <h3>Delivery Note</h3>
+                                    <form action="#">
+                                      <textarea
+                                        class="form-control mb-4 rounded-3 border-0"
+                                        rows="3"
+                                        placeholder="Note for the package..."
+                                      ></textarea>
+                                      <div class="row g-3 mb-4">
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-success"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-check-circle"></i>
+                                            Confirm
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-danger"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-times-circle"></i>
+                                            Cancel
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i
+                                              class="fas fa-exclamation-circle"
+                                            ></i>
+                                            Report a problem
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-orange"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-clock"></i>
+                                            Unreachable
+                                          </button>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="row g-4 justify-content-between align-items-end"
+                                      >
+                                        <div class="col-md-5 col-xl-4">
+                                          <textarea
+                                            class="form-control mb-4 rounded-3 border-0"
+                                            rows="3"
+                                            placeholder="Describe the problem or comment"
+                                          ></textarea>
+                                          <h5
+                                            class="fw-normal rounded-1 p-2"
+                                            style="
+                                              background-color: var(
+                                                --bs-warning-text-emphasis
+                                              );
+                                              color: var(--bs-warning);
+                                            "
+                                          >
+                                            Please enter text above to active
+                                            the buttons cancel and report
+                                            problem
+                                          </h5>
+                                        </div>
+                                        <div class="col-md-5 col-xl-4">
+                                          <div
+                                            class="rounded-2 py-2 px-3 bg-white"
+                                          >
+                                            <div
+                                              class="row g-3 align-items-center"
+                                            >
+                                              <div class="col-auto">
+                                                <span class="sq-icon">
+                                                  <i
+                                                    class="far fa-file-alt"
+                                                  ></i>
+                                                </span>
+                                              </div>
+                                              <div class="col-auto flex-fill">
+                                                <h4 class="mb-0">
+                                                  1x Natulex creme 100ML Status
+                                                </h4>
+                                              </div>
+                                              <div class="col-auto">
+                                                <button
+                                                  class="btn btn-danger-light"
+                                                  type="button"
+                                                >
+                                                  Return
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- SINGLE ORDER// -->
+
+                            <!-- SINGLE ORDER -->
+                            <tr>
+                              <form action="#">
+                                <td>
+                                  <button
+                                    class="btn btn-primary-light btn-sm"
+                                    type="submit"
+                                  >
+                                    update
+                                  </button>
+                                </td>
+                                <td>#1052</td>
+                                <td>
+                                  <input
+                                    class="order-name form-control bg-gray border-0"
+                                    type="text"
+                                    value="Naoufel Naoufel"
+                                  />
+                                </td>
+                                <td>
+                                  <select class="form-select bg-gray border-0">
+                                    <option selected>Tunis</option>
+                                    <option value="1">Tunis 2</option>
+                                    <option value="2">Tunis 3</option>
+                                    <option value="3">Tunis 4</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input
+                                    class="form-control bg-gray border-0"
+                                    type="text"
+                                    value="Tunis / cite erriadh la marsa"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    class="order-phone form-control bg-gray border-0"
+                                    type="text"
+                                    value="98114171"
+                                  />
+                                </td>
+                                <td>1</td>
+                                <td>39.000</td>
+                                <td>
+                                  <span class="text-success"
+                                    >12 minutes ago</span
+                                  >
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-dark btn-sm order-details-trigger"
+                                    type="button"
+                                  >
+                                    Details
+                                  </button>
+                                </td>
+                              </form>
+                            </tr>
+                            <tr>
+                              <td class="p-0 border-0" colspan="10">
+                                <div class="order-details-collapse">
+                                  <div
+                                    class="order-details p-3"
+                                    style="background-color: var(--bs-gray-600)"
+                                  >
+                                    <h3>Details</h3>
+                                    <div class="row g-3 mb-3">
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Number of article
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              1
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">Items</h5>
+                                            <h4 class="card-text fw-normal">
+                                              Natulex Creme Anti Douleur &
+                                              Varice-100 ML
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount amount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Subtotal
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping discount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Full address
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              Tunis / cite erriadh la marsa
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <h3>Delivery Note</h3>
+                                    <form action="#">
+                                      <textarea
+                                        class="form-control mb-4 rounded-3 border-0"
+                                        rows="3"
+                                        placeholder="Note for the package..."
+                                      ></textarea>
+                                      <div class="row g-3 mb-4">
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-success"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-check-circle"></i>
+                                            Confirm
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-danger"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-times-circle"></i>
+                                            Cancel
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i
+                                              class="fas fa-exclamation-circle"
+                                            ></i>
+                                            Report a problem
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-orange"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-clock"></i>
+                                            Unreachable
+                                          </button>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="row g-4 justify-content-between align-items-end"
+                                      >
+                                        <div class="col-md-5 col-xl-4">
+                                          <textarea
+                                            class="form-control mb-4 rounded-3 border-0"
+                                            rows="3"
+                                            placeholder="Describe the problem or comment"
+                                          ></textarea>
+                                          <h5
+                                            class="fw-normal rounded-1 p-2"
+                                            style="
+                                              background-color: var(
+                                                --bs-warning-text-emphasis
+                                              );
+                                              color: var(--bs-warning);
+                                            "
+                                          >
+                                            Please enter text above to active
+                                            the buttons cancel and report
+                                            problem
+                                          </h5>
+                                        </div>
+                                        <div class="col-md-5 col-xl-4">
+                                          <div
+                                            class="rounded-2 py-2 px-3 bg-white"
+                                          >
+                                            <div
+                                              class="row g-3 align-items-center"
+                                            >
+                                              <div class="col-auto">
+                                                <span class="sq-icon">
+                                                  <i
+                                                    class="far fa-file-alt"
+                                                  ></i>
+                                                </span>
+                                              </div>
+                                              <div class="col-auto flex-fill">
+                                                <h4 class="mb-0">
+                                                  1x Natulex creme 100ML Status
+                                                </h4>
+                                              </div>
+                                              <div class="col-auto">
+                                                <button
+                                                  class="btn btn-danger-light"
+                                                  type="button"
+                                                >
+                                                  Return
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- SINGLE ORDER// -->
+
+                            <!-- SINGLE ORDER -->
+                            <tr>
+                              <form action="#">
+                                <td>
+                                  <button
+                                    class="btn btn-primary-light btn-sm"
+                                    type="submit"
+                                  >
+                                    update
+                                  </button>
+                                </td>
+                                <td>#1052</td>
+                                <td>
+                                  <input
+                                    class="order-name form-control bg-gray border-0"
+                                    type="text"
+                                    value="Naoufel Naoufel"
+                                  />
+                                </td>
+                                <td>
+                                  <select class="form-select bg-gray border-0">
+                                    <option selected>Tunis</option>
+                                    <option value="1">Tunis 2</option>
+                                    <option value="2">Tunis 3</option>
+                                    <option value="3">Tunis 4</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input
+                                    class="form-control bg-gray border-0"
+                                    type="text"
+                                    value="Tunis / cite erriadh la marsa"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    class="order-phone form-control bg-gray border-0"
+                                    type="text"
+                                    value="98114171"
+                                  />
+                                </td>
+                                <td>1</td>
+                                <td>39.000</td>
+                                <td>
+                                  <span class="text-success"
+                                    >12 minutes ago</span
+                                  >
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-dark btn-sm order-details-trigger"
+                                    type="button"
+                                  >
+                                    Details
+                                  </button>
+                                </td>
+                              </form>
+                            </tr>
+                            <tr>
+                              <td class="p-0 border-0" colspan="10">
+                                <div class="order-details-collapse">
+                                  <div
+                                    class="order-details p-3"
+                                    style="background-color: var(--bs-gray-600)"
+                                  >
+                                    <h3>Details</h3>
+                                    <div class="row g-3 mb-3">
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Number of article
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              1
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">Items</h5>
+                                            <h4 class="card-text fw-normal">
+                                              Natulex Creme Anti Douleur &
+                                              Varice-100 ML
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount amount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Subtotal
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping discount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Full address
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              Tunis / cite erriadh la marsa
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <h3>Delivery Note</h3>
+                                    <form action="#">
+                                      <textarea
+                                        class="form-control mb-4 rounded-3 border-0"
+                                        rows="3"
+                                        placeholder="Note for the package..."
+                                      ></textarea>
+                                      <div class="row g-3 mb-4">
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-success"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-check-circle"></i>
+                                            Confirm
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-danger"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-times-circle"></i>
+                                            Cancel
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i
+                                              class="fas fa-exclamation-circle"
+                                            ></i>
+                                            Report a problem
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-orange"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-clock"></i>
+                                            Unreachable
+                                          </button>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="row g-4 justify-content-between align-items-end"
+                                      >
+                                        <div class="col-md-5 col-xl-4">
+                                          <textarea
+                                            class="form-control mb-4 rounded-3 border-0"
+                                            rows="3"
+                                            placeholder="Describe the problem or comment"
+                                          ></textarea>
+                                          <h5
+                                            class="fw-normal rounded-1 p-2"
+                                            style="
+                                              background-color: var(
+                                                --bs-warning-text-emphasis
+                                              );
+                                              color: var(--bs-warning);
+                                            "
+                                          >
+                                            Please enter text above to active
+                                            the buttons cancel and report
+                                            problem
+                                          </h5>
+                                        </div>
+                                        <div class="col-md-5 col-xl-4">
+                                          <div
+                                            class="rounded-2 py-2 px-3 bg-white"
+                                          >
+                                            <div
+                                              class="row g-3 align-items-center"
+                                            >
+                                              <div class="col-auto">
+                                                <span class="sq-icon">
+                                                  <i
+                                                    class="far fa-file-alt"
+                                                  ></i>
+                                                </span>
+                                              </div>
+                                              <div class="col-auto flex-fill">
+                                                <h4 class="mb-0">
+                                                  1x Natulex creme 100ML Status
+                                                </h4>
+                                              </div>
+                                              <div class="col-auto">
+                                                <button
+                                                  class="btn btn-danger-light"
+                                                  type="button"
+                                                >
+                                                  Return
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- SINGLE ORDER// -->
+
+                            <!-- SINGLE ORDER -->
+                            <tr>
+                              <form action="#">
+                                <td>
+                                  <button
+                                    class="btn btn-primary-light btn-sm"
+                                    type="submit"
+                                  >
+                                    update
+                                  </button>
+                                </td>
+                                <td>#1052</td>
+                                <td>
+                                  <input
+                                    class="order-name form-control bg-gray border-0"
+                                    type="text"
+                                    value="Naoufel Naoufel"
+                                  />
+                                </td>
+                                <td>
+                                  <select class="form-select bg-gray border-0">
+                                    <option selected>Tunis</option>
+                                    <option value="1">Tunis 2</option>
+                                    <option value="2">Tunis 3</option>
+                                    <option value="3">Tunis 4</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input
+                                    class="form-control bg-gray border-0"
+                                    type="text"
+                                    value="Tunis / cite erriadh la marsa"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    class="order-phone form-control bg-gray border-0"
+                                    type="text"
+                                    value="98114171"
+                                  />
+                                </td>
+                                <td>1</td>
+                                <td>39.000</td>
+                                <td>
+                                  <span class="text-success"
+                                    >12 minutes ago</span
+                                  >
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-dark btn-sm order-details-trigger"
+                                    type="button"
+                                  >
+                                    Details
+                                  </button>
+                                </td>
+                              </form>
+                            </tr>
+                            <tr>
+                              <td class="p-0 border-0" colspan="10">
+                                <div class="order-details-collapse">
+                                  <div
+                                    class="order-details p-3"
+                                    style="background-color: var(--bs-gray-600)"
+                                  >
+                                    <h3>Details</h3>
+                                    <div class="row g-3 mb-3">
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Number of article
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              1
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">Items</h5>
+                                            <h4 class="card-text fw-normal">
+                                              Natulex Creme Anti Douleur &
+                                              Varice-100 ML
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount amount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Subtotal
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping discount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Full address
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              Tunis / cite erriadh la marsa
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <h3>Delivery Note</h3>
+                                    <form action="#">
+                                      <textarea
+                                        class="form-control mb-4 rounded-3 border-0"
+                                        rows="3"
+                                        placeholder="Note for the package..."
+                                      ></textarea>
+                                      <div class="row g-3 mb-4">
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-success"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-check-circle"></i>
+                                            Confirm
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-danger"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-times-circle"></i>
+                                            Cancel
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i
+                                              class="fas fa-exclamation-circle"
+                                            ></i>
+                                            Report a problem
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-orange"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-clock"></i>
+                                            Unreachable
+                                          </button>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="row g-4 justify-content-between align-items-end"
+                                      >
+                                        <div class="col-md-5 col-xl-4">
+                                          <textarea
+                                            class="form-control mb-4 rounded-3 border-0"
+                                            rows="3"
+                                            placeholder="Describe the problem or comment"
+                                          ></textarea>
+                                          <h5
+                                            class="fw-normal rounded-1 p-2"
+                                            style="
+                                              background-color: var(
+                                                --bs-warning-text-emphasis
+                                              );
+                                              color: var(--bs-warning);
+                                            "
+                                          >
+                                            Please enter text above to active
+                                            the buttons cancel and report
+                                            problem
+                                          </h5>
+                                        </div>
+                                        <div class="col-md-5 col-xl-4">
+                                          <div
+                                            class="rounded-2 py-2 px-3 bg-white"
+                                          >
+                                            <div
+                                              class="row g-3 align-items-center"
+                                            >
+                                              <div class="col-auto">
+                                                <span class="sq-icon">
+                                                  <i
+                                                    class="far fa-file-alt"
+                                                  ></i>
+                                                </span>
+                                              </div>
+                                              <div class="col-auto flex-fill">
+                                                <h4 class="mb-0">
+                                                  1x Natulex creme 100ML Status
+                                                </h4>
+                                              </div>
+                                              <div class="col-auto">
+                                                <button
+                                                  class="btn btn-danger-light"
+                                                  type="button"
+                                                >
+                                                  Return
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- SINGLE ORDER// -->
+
+                            <!-- SINGLE ORDER -->
+                            <tr>
+                              <form action="#">
+                                <td>
+                                  <button
+                                    class="btn btn-primary-light btn-sm"
+                                    type="submit"
+                                  >
+                                    update
+                                  </button>
+                                </td>
+                                <td>#1052</td>
+                                <td>
+                                  <input
+                                    class="order-name form-control bg-gray border-0"
+                                    type="text"
+                                    value="Naoufel Naoufel"
+                                  />
+                                </td>
+                                <td>
+                                  <select class="form-select bg-gray border-0">
+                                    <option selected>Tunis</option>
+                                    <option value="1">Tunis 2</option>
+                                    <option value="2">Tunis 3</option>
+                                    <option value="3">Tunis 4</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input
+                                    class="form-control bg-gray border-0"
+                                    type="text"
+                                    value="Tunis / cite erriadh la marsa"
+                                  />
+                                </td>
+                                <td>
+                                  <div
+                                    class="pill-contain d-inline-block position-relative"
+                                  >
+                                    <input
+                                      class="order-phone form-control bg-gray border-0"
+                                      type="text"
+                                      value="98114171"
+                                    />
+                                    <span
+                                      class="badge text-bg-danger rounded-1 position-absolute top-100 start-50 translate-middle-y"
+                                      >Blacklisted</span
+                                    >
+                                  </div>
+                                </td>
+                                <td>1</td>
+                                <td>39.000</td>
+                                <td>
+                                  <span class="text-success"
+                                    >12 minutes ago</span
+                                  >
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-dark btn-sm order-details-trigger"
+                                    type="button"
+                                  >
+                                    Details
+                                  </button>
+                                </td>
+                              </form>
+                            </tr>
+                            <tr>
+                              <td class="p-0 border-0" colspan="10">
+                                <div class="order-details-collapse">
+                                  <div
+                                    class="order-details p-3"
+                                    style="background-color: var(--bs-gray-600)"
+                                  >
+                                    <h3>Details</h3>
+                                    <div class="row g-3 mb-3">
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Number of article
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              1
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">Items</h5>
+                                            <h4 class="card-text fw-normal">
+                                              Natulex Creme Anti Douleur &
+                                              Varice-100 ML
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount amount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Discount price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Subtotal
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Original Price
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              39.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Shopping discount
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              0.000
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-auto">
+                                        <div class="card border-0 rounded-3">
+                                          <div class="card-body fw-normal">
+                                            <h5 class="card-subtitle">
+                                              Full address
+                                            </h5>
+                                            <h4 class="card-text fw-normal">
+                                              Tunis / cite erriadh la marsa
+                                            </h4>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <h3>Delivery Note</h3>
+                                    <form action="#">
+                                      <textarea
+                                        class="form-control mb-4 rounded-3 border-0"
+                                        rows="3"
+                                        placeholder="Note for the package..."
+                                      ></textarea>
+                                      <div class="row g-3 mb-4">
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-success"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-check-circle"></i>
+                                            Confirm
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-danger"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-times-circle"></i>
+                                            Cancel
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i
+                                              class="fas fa-exclamation-circle"
+                                            ></i>
+                                            Report a problem
+                                          </button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button
+                                            class="btn btn-orange"
+                                            type="button"
+                                          >
+                                            <i class="fas fa-clock"></i>
+                                            Unreachable
+                                          </button>
+                                        </div>
+                                      </div>
+
+                                      <div
+                                        class="row g-4 justify-content-between align-items-end"
+                                      >
+                                        <div class="col-md-5 col-xl-4">
+                                          <textarea
+                                            class="form-control mb-4 rounded-3 border-0"
+                                            rows="3"
+                                            placeholder="Describe the problem or comment"
+                                          ></textarea>
+                                          <h5
+                                            class="fw-normal rounded-1 p-2"
+                                            style="
+                                              background-color: var(
+                                                --bs-warning-text-emphasis
+                                              );
+                                              color: var(--bs-warning);
+                                            "
+                                          >
+                                            Please enter text above to active
+                                            the buttons cancel and report
+                                            problem
+                                          </h5>
+                                        </div>
+                                        <div class="col-md-5 col-xl-4">
+                                          <div
+                                            class="rounded-2 py-2 px-3 bg-white"
+                                          >
+                                            <div
+                                              class="row g-3 align-items-center"
+                                            >
+                                              <div class="col-auto">
+                                                <span class="sq-icon">
+                                                  <i
+                                                    class="far fa-file-alt"
+                                                  ></i>
+                                                </span>
+                                              </div>
+                                              <div class="col-auto flex-fill">
+                                                <h4 class="mb-0">
+                                                  1x Natulex creme 100ML Status
+                                                </h4>
+                                              </div>
+                                              <div class="col-auto">
+                                                <button
+                                                  class="btn btn-danger-light"
+                                                  type="button"
+                                                >
+                                                  Return
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- SINGLE ORDER// -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
